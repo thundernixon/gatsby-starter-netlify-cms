@@ -78,6 +78,7 @@ exports.createPages = ({
   })
 }
 
+
 exports.onCreateNode = ({
   node,
   actions,
@@ -99,14 +100,3 @@ exports.onCreateNode = ({
     })
   }
 }
-
-// gatsby-node.js
-const {
-  fmImagesToRelative
-} = require('gatsby-remark-relative-images');
-
-exports.onCreateNode = ({
-  node
-}) => {
-  fmImagesToRelative(node);
-};
